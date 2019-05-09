@@ -6,6 +6,7 @@ import re
 from time import time
 from sqlalchemy import create_engine
 import nltk
+import pickle
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -183,7 +184,7 @@ def main():
 
         print("Saving model...")
         export_model(model, model_path)
-        print("Model saved at ", clf_path, "!")
+        print("Model saved at ", model_path, "!")
         print("------------")
 
     else:
