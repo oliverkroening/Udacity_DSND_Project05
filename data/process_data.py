@@ -2,7 +2,8 @@ import sys
 import pandas as pd
 from sqlalchemy import create_engine
 
-def load_data(messages_path = "messages.csv", categories_path = "categories.csv"):
+def load_data(messages_path = "disaster_messages.csv",
+                categories_path = "disaster_categories.csv"):
     '''
     Function:   load and merge message and categorie databases from csv files
     Args:
