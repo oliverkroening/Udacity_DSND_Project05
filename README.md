@@ -37,21 +37,21 @@ First, the pipelines are created and tested within Jupyter Notebooks. These note
 ## 3. File Descriptions <a name="files"></a>  
 The project consists of four folders:
 - app
-| - template
-| |- master.html  (main page of web app)
-| |- go.html  (classification result page of web app)
-|- run.py  (Flask file that runs app)
+  - template
+    - `master.html` (main page of web app)
+    - `go.html`(classification result page of web app)
+  - `run.py` (Flask file that runs app)
 
 - data
-|- disaster_categories.csv  (categories database, that has to be processed)
-|- disaster_messages.csv  (messages database, that has to be processed)
-|- process_data.py (ETL pipeline)
-|- DisasterResponse.db   (database of save clean data)
+  - `disaster_categories.csv` (categories database, that has to be processed) 
+  - `disaster_messages.csv`(messages database, that has to be processed)
+  - `process_data.py` (ETL pipeline)
+  - `DisasterResponse.db` (database of save clean data)
 
 - models
-|- train_classifier.py (ML pipeline)
-|- disaster_response_clf.pkl  (saved model)
-|- disaster_response_clf1.pkl  (saved model)
+  - `train_classifier.py` (ML pipeline)
+  - `disaster_response_clf.pkl` (saved model)
+  - `disaster_response_clf1.pkl`  (saved model)
 
 The ETL pipeline can be called in a terminal as follows:
 python process_data.py <path_to_messages_database> <path_to_categories_database> <SQL_database_destination>
