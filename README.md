@@ -54,21 +54,32 @@ The project consists of four folders:
   - `disaster_response_clf1.pkl`  (saved model)
 
 The ETL pipeline can be called in a terminal as follows:
-python process_data.py <path_to_messages_database> <path_to_categories_database> <SQL_database_destination>
+
+`python process_data.py <path_to_messages_database> <path_to_categories_database> <SQL_database_destination>`
+
 Example:
-python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+
+`python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db`
+
 
 The ML pipeline can be called in a terminal as follows:
-python train_classifier.py <path_to_SQL_database> <classifier_destination>
+
+`python train_classifier.py <path_to_SQL_database> <classifier_destination>`
+
 Example:
-python train_classifier.py ../data/DisasterResponse.db disaster_response_clf.pkl
+`python train_classifier.py ../data/DisasterResponse.db disaster_response_clf.pkl`
+
 
 To run the web application, you have to type in the command line:
-python run.py
+
+`python run.py`
+
 If there are no errors, you can open another terminal window and type
-env|grep WORK
-to show the WORKSPACEDOMAIN and the WORKSPACEID. After that, you have to open a browser window to open the app on port 3001:
-https://SPACEID-3001.SPACEDOMAIN
+
+`env|grep WORK`
+
+to show the `WORKSPACEDOMAIN` and the `WORKSPACEID`. After that, you have to open a browser window to open the app on port 3001:
+`https://SPACEID-3001.SPACEDOMAIN`
 
 ## 4. Results <a name="results"></a>
 Two classifiers were built, trained and evaluated during this project. Both show quite good results in classifying messages with an f1-score of around 0.67.
